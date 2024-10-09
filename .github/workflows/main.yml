@@ -27,6 +27,7 @@ on:
           - 'LineageOS 16.0'
           - 'CyanogenMOD 14.1'
           - 'AOSP'
+          - 'Nusan'
       BUILD_DIFFERENT_ROM:
         description: "Command to initialize a different 'repo' project:"
         required: false
@@ -142,6 +143,11 @@ jobs:
           export PROJECTFOLDER="/crave-devspaces/AOSP"
           export PROJECTID="35"
           export REPO_INIT="repo init -u https://android.googlesource.com/platform/manifest.git -b master --git-lfs --depth=1"
+        ;;
+        "Nusan")
+          export PROJECTFOLDER="/crave-devspaces/nusan"
+          export PROJECTID="35"
+          export REPO_INIT="repo init -u https://github.com/NusantaraProject-ROM/android_manifest -b 10 --git-lfs --depth=1"
         ;;
         esac
 
