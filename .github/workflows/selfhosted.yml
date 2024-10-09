@@ -193,8 +193,8 @@ jobs:
           export REPO_INIT="repo init -u https://android.googlesource.com/platform/manifest.git -b master --git-lfs --depth=1"
         ;;
         "Nusantara")
-          export PROJECTFOLDER="/crave-devspaces/Nusantara"
-          export PROJECTID="49"
+          export PROJECTFOLDER="/crave-devspaces/AOSP"
+          export PROJECTID="35"
           export REPO_INIT="repo init -u https://github.com/NusantaraProject-ROM/android_manifest -b 10 --git-lfs --depth=1"
         ;;
         esac
